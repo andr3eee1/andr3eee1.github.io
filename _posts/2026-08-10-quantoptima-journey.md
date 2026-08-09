@@ -4,6 +4,7 @@ title: "QuantOptima: Why the 'Perfect' Math Fails in Neural Network Quantization
 date: 2026-08-10 00:00:00 +0300
 categories: [Machine Learning, Systems]
 tags: [quantization, python, pytorch, research, lloyd-max]
+math: true
 pin: true
 ---
 
