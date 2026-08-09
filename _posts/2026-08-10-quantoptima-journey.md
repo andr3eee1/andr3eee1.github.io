@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "QuantOptima: Why the 'Perfect' Math Fails in Neural Network Quantization"
 date: 2026-08-10 12:00:00 +0300
 categories: [Machine Learning, Systems]
