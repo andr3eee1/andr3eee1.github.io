@@ -48,7 +48,7 @@ Typst throws away macro expansion entirely. Instead, Typst features a real progr
 
 Here is how you write a custom styled card component in Typst using native functions:
 
-```rust
+```typst
 #let callout(title: "Note", body, color: rgb("#3b82f6")) = {
   block(
     fill: color.lighten(90%),
@@ -82,7 +82,7 @@ The real killer feature in Typst is the separation of **styling defaults** (`#se
 
 The `#set` rule modifies the default properties of built-in layout elements within the current scope. It propagates down the document tree naturally.
 
-```rust
+```typst
 // Configure document-wide text and page properties
 #set page(
   paper: "a4",
@@ -107,7 +107,7 @@ While `#set` handles properties, `#show` completely redefines how elements are r
 
 Think of `#show` as a compiler pass or a CSS rule combined with a JavaScript template transformer.
 
-```rust
+```typst
 // Transform all level 1 headings
 #show heading.where(level: 1): it => {
   v(1em)
@@ -140,7 +140,7 @@ What if you want to modify built-in elements globally without breaking default p
 
 For example, let's say we want every raw code block in our document to feature rounded borders, subtle background coloring, and custom padding.
 
-```rust
+```typst
 #show raw.where(block: true): it => [
   #block(
     fill: rgb("#f8fafc"),
@@ -212,7 +212,7 @@ Math mode in Typst is designed to feel natural rather than backslash-heavy. Comp
 
 ### Typst Version
 
-```rust
+```typst
 $ f(x) = sum_(n=0)^oo (f^(n)(a)) / n! (x - a)^n "where" x in {1, 2, 3, ...} $
 ```
 
