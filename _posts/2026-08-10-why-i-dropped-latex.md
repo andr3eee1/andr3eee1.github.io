@@ -181,8 +181,8 @@ void calculate_stats(BenchmarkStats* stats) {
 }
 
 int main() {
-  BenchmarkStats latex_bench = {{1420.5, 1380.2, 1450.0, 1410.8, 1395.4}, 0.0};
-  BenchmarkStats typst_bench = {{12.4, 11.8, 13.1, 12.0, 11.9}, 0.0};
+  BenchmarkStats latex_bench = { {1420.5, 1380.2, 1450.0, 1410.8, 1395.4}, 0.0 };
+  BenchmarkStats typst_bench = { {12.4, 11.8, 13.1, 12.0, 11.9}, 0.0 };
 
   calculate_stats(&latex_bench);
   calculate_stats(&typst_bench);
