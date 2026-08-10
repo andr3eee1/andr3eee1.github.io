@@ -63,7 +63,7 @@ Instead of thinking about searching for a specific index, let's reframe binary s
 
 Binary search is just finding the transition boundary in a monotonically partitioned boolean space. You have a search space where a predicate $P(x)$ evaluates to `false` for all values up to a point, and `true` for all values after (or vice versa).
 
-$$\underbrace{\text{false, false, false, \dots, false}}_{st \text{ region}} \quad \vert \quad \underbrace{\text{true, true, \dots, true, true}}_{dr \text{ region}}$$
+$$\underbrace{\text{false, false, false, ..., false}}_{st \text{ region}} \quad \vert \quad \underbrace{\text{true, true, ..., true, true}}_{dr \text{ region}}$$
 
 We maintain a half-open interval $[st, dr)$ with two fundamental **invariants**:
 
