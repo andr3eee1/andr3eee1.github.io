@@ -12,4 +12,3 @@ platforms :windows, :jruby do
 end
 
 gem "wdm", "~> 0.2.0", :platforms => [:windows]
-gem "rouge", ">= 4.2.0"
